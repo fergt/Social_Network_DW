@@ -1,0 +1,103 @@
+
+
+** Pasos para instalación **
+
+1. Descomprimir el archivo
+
+2. Colocar el archivo en la ruta htdocs
+
+3. Ubicarse en la ruta del proyecto y ejecutar el siguiente comando en la terminal
+composer install
+
+* Esperar a que finalice *
+
+4. Ejecutar el siguiente comando para que genere la llave
+php artisan key:generate
+
+5. Crear la base de datos en mysql con el nombre SOCIANET
+
+6. Creada la base, seleccionarla y ejecutar los script indicados en el directorio
+
+/Proyecto_UMG_DWeb_v3.0\database/socianet.sql
+
+7. Ejecutados los script, en la terminal se debe ejecutar el siguiente comando para limpiar cache
+
+php artisan config:cache
+
+8. Se inicia el servidor
+
+php artisan serve --port=5000
+
+9. Abrir el explorador 
+
+http://localhost:5000/
+
+
+$this->app->bind('path.public', function(){
+	return'/public_html'; 
+});
+
+
+
+--- hhosting
+
+1an1
+
+Proyecto.desar2020
+ajvane97@gmail.com
+zip code puse 01018
+
+Hostname
+www.nuestrasocialnetwork.com
+
+Base de datos
+Host
+db5001085358.hosting-data.io
+
+usuario
+dbu192096
+Pass
+Proyecto.desar2020
+
+
+
+
+-----
+Borrar 
+Boostrap/chache
+
+
+Para volver productivo el proyecto
+
+composer dumpautoload
+
+Ejemplo para desarrollo
+http://localhost/Proyecto_UMG_DWeb/Proyecto_UMG_DWeb/public/login/facebbok/callback
+
+
+
+Para app de Facebook developer deben coincidir estos
+
+
+URI de redireccionamiento de OAuth válidos
+
+
+Validador de URI de redireccionamiento
+URI de redireccionamiento para comprobar
+
+En configuración basica
+Dominios de la app
+URL del sitio
+
+https://www.nuestrasocialnetwork.com/login/facebbok/callback
+
+https://www.nuestrasocialnetwork.com/index.php/login/auth/facebbok/callback
+
+
+
+---------
+
+https://nuestrasocialnetwork.com/login/facebbok/callback
+
+
+https://graph.facebook.com/v3.3/10220738509325696/picture?type=normal
